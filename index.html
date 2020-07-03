@@ -16,27 +16,25 @@
                 <a href="index.html"><h1>NCB</h1>
                 <p><span>Твій новий салон краси</span></p></a>
             </div>
-                <ul class="nav">
+                <ul class="nav" id="myNavBar">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
                     <li class="nav-item">
-                      <a class="nav-link" href="#волосся">Волосся</a>
+                      <a class="nav-link text-center" href="#волосся" onclick="closeNav()">Волосся</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#нігті">Нігті</a>
+                      <a class="nav-link text-center" href="#нігті" onclick="closeNav()">Нігті</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#подологія">Подологія</a>
+                      <a class="nav-link text-center" href="#подологія" onclick="closeNav()">Подологія</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#якпотрапити">Як потрапити</a>
+                      <a class="nav-link text-center" href="#якпотрапити" onclick="closeNav()"><wbr>Як потрапити</wbr></a>
                     </li>
                   </ul>
-            <a href="https://n176940.yclients.com/"><button>
+            <div class="signbut"><a href="https://n176940.yclients.com/"><button>
                 ЗАПИСАТИСЯ ОНЛАЙН
-            </button></a>
-
-           <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="navbarSuportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-            </button>   -->
+            </button></a></div>
+            <span class="openbtn" onclick="openNav()">&#9776;</span>
             
         </div>
    </header>
@@ -82,12 +80,12 @@
     </div>
     
     <footer>
-      <div class="footer">
+      <div class="footer" id="myFooter">
         <ul class="footer-text">
-          <li class="footer-item">&copy;Салон краси NCB</li>
-          <li class="footer-item">Київ, Дарницький бульвар 1а</li>
-          <li class="footer-item">(050) 847 46 47</li>
-          <li class="footer-item">Без вихідних з 9:00 до 21:00</li>
+          <li class="footer-item text-center">&copy;Салон краси NCB</li>
+          <li class="footer-item text-center">Київ, Дарницький бульвар 1а</li>
+          <li class="footer-item text-center">(050) 847 46 47</li>
+          <li class="footer-item text-center">Без вихідних з 9:00 до 21:00</li>
           <li class="inst"></li>
           <li class="facebook"></li>
         </ul>
@@ -101,6 +99,7 @@
    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" 
-   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>    
+   integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <script src="js/script.js"></script>    
 </body>
 </html>
