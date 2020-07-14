@@ -1,6 +1,6 @@
 function openNav() {
-    document.getElementById("myNavBar").style.width = "30%";
-    document.getElementById("myFooter").style.width = "30%";
+    document.getElementById("myNavBar").style.width = "40%";
+    document.getElementById("myFooter").style.width = "40%";
   }
   
   function closeNav() {

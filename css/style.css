@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;
     font-family: 'Montserrat', sans-serif;
@@ -102,6 +106,7 @@ p>span{
     color: white;
     font-size: 3.5em;
     padding-top: 40px;
+    scroll-margin-top: 130px;
 }
 
 .hair{
@@ -115,6 +120,10 @@ p>span{
 
 .podology{
     background: url(../images/podology.png);
+}
+
+.map{
+    scroll-margin-top: 130px;
 }
 
 .tile-front{
@@ -167,14 +176,16 @@ p>span{
     margin-top: 35px;
 }
 
+.socials{
+    display: flex;
+}
+
 .inst{
     background: url(../images/instagram-logo.png) no-repeat center;
     background-size: 50px;
     height: 50px;
     width: 50px;
     margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto
 }
 
 .facebook{
@@ -183,8 +194,7 @@ p>span{
     height: 50px;
     width: 50px;
     margin-top: 19px;
-    margin-left: auto;
-    margin-right: auto
+    margin-right: 35px;
 }
 
 .openbtn{
@@ -231,7 +241,7 @@ p>span{
         z-index: 1;
         top: 0;
         right: 0;
-        background-color: #111;
+        background-color: #0D0A0B;
         overflow-x: hidden;
         transition: .5s ease;
         padding-top: 60px;
@@ -245,7 +255,7 @@ p>span{
         z-index: 1;
         bottom: 0;
         right: 0;
-        background-color: #111;
+        background-color: #0D0A0B;
         overflow-x: hidden;
         transition: .5s ease;
         display: block;
@@ -256,16 +266,18 @@ p>span{
         transition: .3s;
         width: 100%;
         display: block;
+        margin-top: 10px;
     }
 
     .footer-text{
         display: block;
+        margin-top: 50px;
     }
 
     .nav-item{
         width: 100%;
         font-size: 1.1em;
-        margin-top: 40px;
+        margin-top: 15px;
     }
 
     .nav-link{
@@ -296,8 +308,67 @@ p>span{
     .nav-item::before{
         display: none;
     }
+
+    .inst, .facebook{
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 @media screen and (max-width:768px){
 
+    .signbut{
+        display: block;
+        margin-top: 90px;
+    }
+
+    .big-tile{
+        height: 440px;
+    }
+
+    .map{
+        height: 440px;
+    }
+
+    header{
+        height: 145px;
+    }
+
+    .nav-item{
+        font-size: 1em;
+    }
+
+    .footer-item{
+        font-size: .8em;
+    }
+
+    .navbar{
+        align-items: normal;
+        height: 145px;
+    }
+
+    .openbtn{
+        margin-top: 30px;
+    }
+
+}
+
+@media screen and (max-width:576px){
+
+    .big-tile{
+        width: 70%;
+    }
+
+    .tile-back{
+        font-size: 2.9em;
+    }
+
+    .hair{
+        background: url(../images/hair.png) no-repeat center;
+    }
+
+    .podology{
+        background: url(../images/podology.png) no-repeat center;
+    }
 }
