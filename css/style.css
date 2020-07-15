@@ -411,6 +411,15 @@ a.phonenum{
         font-size: 2.9em;
     }
 
+    .tile-front{
+        padding-top: 55px;
+    }
+
+    .info-price{
+        font-size: 0.8em;
+    }
+
+
     .hair{
         background: url(../images/hair.png) no-repeat center;
     }
