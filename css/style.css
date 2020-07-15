@@ -120,7 +120,6 @@ p>span{
 
 .tile-front{
     color: white;
-    font-size: 20px;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -128,6 +127,7 @@ p>span{
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+    width: 100%;
 }
 
 .overlay {
@@ -144,6 +144,18 @@ p>span{
 
 .big-tile:hover .overlay {
     height: 100%;
+}
+
+.proposition{
+    text-align: left;
+    padding-left: 70px;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.proposition-12{
+    text-align: center;
+    padding-left: 0;
 }
 
 .footer{
