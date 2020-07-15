@@ -207,7 +207,7 @@ a.phonenum{
     .navbar button{
         width: 200px;
         height: 40px;
-        font-size: .86em;
+        font-size: .8em;
     }
 }
 
@@ -346,7 +346,6 @@ a.phonenum{
     }
 
     a.phonenum{
-        color: white;
         text-decoration: underline;       
     }
 
