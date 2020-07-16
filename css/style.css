@@ -267,7 +267,7 @@ a.phonenum{
     }
 
     .nav{
-        height: 100%;
+        height: 100vh;
         width: 0;
         position: fixed;
         z-index: 1;
