@@ -1,0 +1,443 @@
+body{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+
+h1{
+    font-weight: 500;
+    margin: -3px;
+    margin-bottom: -8px;
+    font-size: 2.7vw;
+}
+
+header{
+    width: 100%;
+    height: 130px;
+}
+
+p>span{
+    font-size: 1vw;
+    font-weight: 400;
+}
+
+.navbar-brand{
+    margin-left: 100px;
+    margin-top: 20px;
+}
+
+.nav-item{
+    margin-right: 5px;
+    margin-left: 5px;
+    font-weight: 400;
+    font-size: 1.8vw;
+    position: relative;
+}
+
+.nav-item::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out 0s;
+}
+
+.nav-item:hover::before {
+    visibility: visible;
+    transform: scaleX(1);
+}
+
+.navbar button{
+    background-color: #229F4D;
+    border: none;
+    color: white;
+    border-radius: 7px;
+    font-weight: 400;
+    width: 250px;
+    height: 45px;
+    font-size: 1.12em;
+    text-align: center;
+    outline: none;
+}
+
+.navbar button:hover{
+    background-color: #0c6b2d;
+}
+
+.navbar{
+    position: fixed;
+    background-color: #fff;
+    width: 100%;
+    top: 0;
+    z-index: 1030;
+    flex-wrap: nowrap;
+}
+
+.big-tile{
+    width: 60%;
+    height: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+.tile-back{
+    height: 100%;  
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+    padding-top: 40px;
+    scroll-margin-top: 130px;
+}
+
+.hair{
+    background: url(../images/hair.png) no-repeat;
+}
+
+.nails{
+    background: url(../images/nails.png) no-repeat;
+    letter-spacing: 3px;
+}
+
+.podology{
+    background: url(../images/podology.png);
+}
+
+.tile-front{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+    padding-top: 50px;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #595959aa;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+.big-tile:hover .overlay {
+    height: 100%;
+}
+
+.proposition{
+    text-align: left;
+    padding-left: 70px;
+    margin-top: 30px;
+    font-size: 1.5em;
+}
+
+.proposition-12{
+    text-align: center;
+    padding-left: 0;
+}
+
+.info-price{
+    font-size: 1.1em;
+    margin-top: 30px;
+    border: 1px solid #dedede;
+    color: #dedede;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.info-price:hover{
+    color: #fff;
+    cursor: pointer;
+    border: 1px solid #fff;
+}
+
+.footer{
+    background-color: #0D0A0B;
+    height: 100px;
+    
+}
+
+a.phonenum{
+    color: white;
+    text-decoration: none;
+
+}
+
+.footer-text{
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.footer-item{
+    font-weight: 300;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
+    margin-top: 35px;
+}
+
+.socials{
+    display: flex;
+}
+
+.inst{
+    background: url(../images/instagram-logo.png) no-repeat center;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+}
+
+.facebook{
+    background: url(../images/facebook-logo.png) no-repeat center;
+    background-size: 50px;
+    height: 50px;
+    width: 50px;
+    margin-top: 19px;
+    margin-right: 35px;
+}
+
+.openbtn{
+    display: none;
+}
+
+.closebtn{
+    display: none;
+}
+
+@media screen and (max-width:1200px){
+    .navbar button{
+        width: 200px;
+        height: 40px;
+        font-size: .8em;
+    }
+
+    .proposition{
+        font-size: 1.22em;
+    }
+}
+
+@media screen and (max-width:992px){
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    p>span{
+        font-size: .5em;
+    }
+
+    .signbut{
+        position: absolute;
+        left: 50%;
+        margin-left: -100px;
+    }
+
+    .navbar-brand{
+        margin-left: 70px;
+        margin-right: 0;
+    }
+
+    .nav{
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        bottom:0;
+        background-color: #0D0A0B;
+        overflow-x: hidden;
+        transition: .5s ease;
+        padding-top: 60px;
+        display: block;
+    }
+
+    .proposition{
+        font-size: 1.1em;
+        padding-left: 45px;
+        margin-top: 25px;
+    }
+
+    .footer{
+        margin-top: 130px;
+    }
+
+    .footer-item{
+        color: white;
+        transition: .3s;
+        width: 100%;
+        display: block;
+        margin-top: 10px;
+    }
+
+    .footer-text{
+        display: block;
+        margin-top: 50px;
+    }
+
+    .nav-item{
+        width: 100%;
+        font-size: 1.1em;
+        margin-top: 15px;
+    }
+
+    .nav-link{
+        color: white;
+        transition: .3s;
+    }
+
+    .nav-link:hover{
+        color: gray;
+    }
+
+    .nav .closebtn{
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 25px;
+        color: white;
+        font-size: 36px;
+    }
+
+    .openbtn{
+        display: block;
+        font-size:30px;
+        cursor:pointer;
+        margin-right: 50px;
+    }
+
+    .nav-item::before{
+        display: none;
+    }
+
+    .inst, .facebook{
+        display: inline-block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+@media screen and (max-width:768px){
+
+    .signbut{
+        display: block;
+        margin-top: 90px;
+    }
+
+    .big-tile{
+        height: 440px;
+    }
+
+    .map{
+        height: 440px;
+    }
+
+    header{
+        height: 145px;
+    }
+
+    .nav-item{
+        font-size: 1em;
+    }
+
+    .proposition{
+        font-size: 1em;
+        padding-left: 45px;
+        margin-top: 14px;
+    }
+
+    .proposition-12{
+        text-align: left;
+    }
+
+    .footer{
+        margin-top: 110px;
+    }
+
+    .footer-item{
+        font-size: .8em;
+    }
+
+    .navbar{
+        align-items: normal;
+        height: 145px;
+    }
+
+    .openbtn{
+        margin-top: 30px;
+    }
+
+    a.phonenum{
+        text-decoration: underline;       
+    }
+
+}
+
+@media screen and (max-width:576px){
+
+    .big-tile{
+        width: 70%;
+    }
+
+    .tile-back{
+        font-size: 2.9em;
+    }
+
+    .tile-front{
+        padding-top: 55px;
+    }
+
+    .info-price{
+        font-size: 0.8em;
+    }
+
+
+    .hair{
+        background: url(../images/hair.png) no-repeat center;
+    }
+
+    .podology{
+        background: url(../images/podology.png) no-repeat center;
+    }
+
+    .navbar-brand{
+        margin-left: 20px;
+    }
+
+    .openbtn{
+        margin-right: 20px;
+    }
+
+    .footer{
+        margin-top: 0;
+    }
+
+}
