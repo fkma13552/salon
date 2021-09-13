@@ -170,6 +170,11 @@ p>span{
     padding: 5px;
 }
 
+.info-price>a{
+    text-decoration: none;
+    color: white;
+}
+
 .info-price:hover{
     color: #fff;
     cursor: pointer;
